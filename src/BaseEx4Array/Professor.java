@@ -34,7 +34,7 @@ public class Professor {
             }
         }
 
-        System.out.println("\n 1. Rechercher un étudiant par nom");
+        System.out.println("\n1. Rechercher un étudiant par nom");
         System.out.println("2. Rechercher les étudiants par note");
         int choice = scanner.nextInt();
         scanner.nextLine(); 
