@@ -2,7 +2,6 @@ package BaseEx4Array;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import BaseEx4Array.BaseEx4Array;
 
 public class ProfessorBaseEx4Array {
 
@@ -19,13 +18,13 @@ public class ProfessorBaseEx4Array {
         scanner.close();
     }
 
-    // 🔹 Lecture d'une chaîne de texte
+
     public static String getInput(Scanner scanner, String message) {
         System.out.print(message);
         return scanner.nextLine();
     }
 
-    // 🔹 Lecture des notes
+
     public static ArrayList<Double> getGrades(Scanner scanner) {
         ArrayList<Double> grades = new ArrayList<>();
         boolean finished = false;
@@ -41,15 +40,15 @@ public class ProfessorBaseEx4Array {
                 }
             } else {
                 System.out.println("Entrée invalide, veuillez saisir un nombre.");
-                scanner.next(); // vide la mauvaise entrée
+                scanner.next(); 
             }
         }
 
-        scanner.nextLine(); // vide le buffer
+        scanner.nextLine(); 
         return grades;
     }
 
-    // 🔹 Affichage des informations de l'élève
+
     public static void displayStudentInfo(String firstName, String lastName, ArrayList<Double> grades) {
         System.out.println("\nÉlève : " + firstName + " " + lastName);
         System.out.println("Notes : " + grades);
